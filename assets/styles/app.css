@@ -2,6 +2,7 @@
   color: white;
 }
 
+
 .bg-green{
   background-color: #05712F;
 }
@@ -9,6 +10,39 @@
 a{
   text-decoration: none;
   cursor: pointer;
+}
+
+/* login */
+.form-container {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-wrapper {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/*formulaire*/
+.input-group-text {
+  padding: 10.8px 12px;
+}
+.form-group {
+  margin: 10px 0px;
+}
+.btn-inscrire {
+  margin-top: 1.5rem;
+  background-color: #0d5298;
+  color: white;
+  width: 100%;
+}
+
+.form-control {
+  margin-bottom: 1rem;
 }
 
 .list-comment a{
