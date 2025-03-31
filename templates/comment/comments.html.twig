@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Commentaires{% endblock %}
+
+{% block body %}
+<section class="list-comment">
+  <div class="mx-auto py-5 bg-grey mt-5">
+    <div class="align-items-center mb-5 d-flex flex-column">
+      <h1 class="heading-2">Avis de nos clients</h1>
+        <a href="{{ path('app_commentaire') }}" class="btn btn-primary ">     
+        Donnez votre avis</a>
+    <div class="flex-column align-items-center d-flex  ">
+    {% for commentaire in commentaires %}
+      <div class=" m-5 bg-light py-4 px-5 w-75 rounded-2">
+        <div class="d-flex w-100 justify-content-between flex-wrap mb-3">
+          <h5 class="mb-1">{{ commentaire.lastname }} {{ commentaire.firstname }}</h5>
+          <small class="text-muted mb-1">{{ commentaire.createdAt|date('d-m-Y') }}</small>
+        </div>
+        <p class="mb-1 text-start ">{{ commentaire.message }}</p>
+      </div>
+    {% endfor %}
+</div>
+</div>
+</div>
+  </section>
+  {% endblock %}

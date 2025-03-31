@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+<div class="container my-5">
+    <h1 class="text-center">Mon compte</h1>
+    <div class="col-md-6 offset-md-3">
+        <h2 class="text-center">Modification de l'adresse email</h2>
+        {{form(modifyEmailForm)}}
+    </div>
+{% endblock %}
