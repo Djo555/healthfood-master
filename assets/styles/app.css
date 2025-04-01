@@ -440,3 +440,33 @@ nav .container-fluid {
 .d-inline {
   display: inline-block;
 }
+
+/* Section besoin*/
+
+.section-besoin{
+  background-color: #eeb504;
+
+}
+
+.besoin-content{
+  padding: 50px;
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px auto;
+}
+
+.card-besoin{
+  background-color: white;
+  width: 369px;
+  height: 523px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-besoin img {
+  width: 100%;
+  height: auto;
+}
