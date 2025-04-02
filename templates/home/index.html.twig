@@ -3,6 +3,8 @@
 {% block title %}Accueil{% endblock %}
 
 {% block body %}
+{{ render(controller('App\\Controller\\SectionNewController::index')) }}
+
 <div class = "service" > 
     <div class = "card">
         <div class = "card_header">
@@ -37,10 +39,10 @@
     </div> 
 
 </div>
-{{ render(controller('App\\Controller\\SectionNewController::index')) }}
-
-{{ render(controller('App\\Controller\\BesoinController::index')) }}
 
 {{ render(controller('App\\Controller\\SectionCommentController::index')) }}
+{{ render(controller('App\\Controller\\BesoinController::index')) }}
+
+
 
 {% endblock %}

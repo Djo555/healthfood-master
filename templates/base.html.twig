@@ -28,6 +28,7 @@
         {% endfor %}
 
         {% block body %}{% endblock %}
+        {%  include "base/footer.html.twig" %}
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
         <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>    

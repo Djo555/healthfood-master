@@ -4,7 +4,8 @@
 
 
 .bg-green{
-  background-color: #05712F;
+  background-color: #eeb504;
+  padding-bottom:  40px;
 }
 
 a{
@@ -455,11 +456,12 @@ nav .container-fluid {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px auto;
+  margin: 0 auto;
 }
 
 .card-besoin{
-  background-color: white;
+  background-color: #eeb504;
+  color: white;
   width: 369px;
   height: 523px;
   display: flex;
