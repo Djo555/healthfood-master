@@ -65,9 +65,6 @@ $products = [
     ["name"=>"IAFood","description"=>"Le complément alimentaire du futur","image1"=>"CA healthfood.jpg","image2"=>"CA2 healthfood.jpg","price"=>29.99],
     ["name"=>"IAFoodNew","description"=>"Le complément alimentaire du futur","image1"=>"CA healthfood.jpg","image2"=>"CA2 healthfood.jpg","price"=>49.99],
     ["name"=>"IAFoodSum","description"=>"Le complément alimentaire du futur","image1"=>"CA healthfood.jpg","image2"=>"CA2 healthfood.jpg","price"=>69.99],
-    ["name"=>"IABoostFood","description"=>"Le complément boost du futur","image1"=>"CA boost.png","image2"=>"CA2 boost.png","price"=>89.99],
-    ["name"=>"IACollNew","description"=>"Le complément collagene du futur","image1"=>"CA coll.png","price"=>109.99],
-    ["name"=>"IAImperfSum","description"=>"Le complément anti-imperfections du futur","image1"=>"CA imperf.png","price"=>129.99],
 ] 
     ;
 

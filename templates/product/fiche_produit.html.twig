@@ -5,10 +5,10 @@
 {% block body %}
 
 
-    <h1 class = "fiche_title">Produit</h1>
+    <h1 class = "fiche_title my-5">Produit</h1>
 <div class="fiche mb-3">
 
-    <div class="fiche-left col-xl-6 col-md-6 col-sm-12">
+    <div class="fiche-left col-xl-4 col-md-4 col-sm-12">
     <h3 class="card-header">{{ product.name }}</h3>
     <p class="card-title">{{ product.description }}</p>
         <div class="card-footer text-muted">
@@ -16,10 +16,11 @@
         </div>
     </div>
 
-    <div class="fiche-right col-xl-6 col-md-6 col-sm-12">
+    <div class="fiche-right col-xl-4 col-md-4 col-sm-12">
         <img class="img-product" src="{{ asset('build/images/' ~ product.image1) }}" alt="Le complément alimentaire du futur">
 
     </div>
+
     <form action="{{ path('add_to_cart', {id: product.id, redirect_to: app.request.uri}) }}" method="POST" class="add-to-cart-form">
         <div class="form-group mb-2">
             <label for="quantity">Quantité:</label>
@@ -27,6 +28,5 @@
         </div>
         <button type="submit" class="btn btn-primary">Ajouter au panier</button>
     </form>
-</div>
-    
+    </div>
 {% endblock %}

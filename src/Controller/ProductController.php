@@ -32,6 +32,7 @@ class ProductController extends AbstractController
                 'description' => $product->getDescription(),
                 'price' => $product->getPrice(),
                 'image1' => $product->getImage1(),
+                'createdAt' => $product->getCreatedAt(), 
                 // Add any other fields you need
             ];
         }

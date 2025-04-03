@@ -40,12 +40,12 @@ const ProductsFilter = (props) => {
         break;
       case "date-desc":
         sortedProducts.sort(
-          (a, b) => new Date(b.createdAt) - new Date(a.createdAt)
+          (a, b) => new Date(b.createdAt.date) - new Date(a.createdAt.date)
         );
         break;
       case "date-asc":
         sortedProducts.sort(
-          (a, b) => new Date(a.createdAt) - new Date(b.createdAt)
+          (a, b) => new Date(a.createdAt.date) - new Date(b.createdAt.date)
         );
         break;
       default:
