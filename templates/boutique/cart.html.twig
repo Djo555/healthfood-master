@@ -70,31 +70,32 @@
 
 
             <div class="cart-summary">
+                <div class="summary-left">
+                    <h2>Total</h2>
 
-                <h2>Total</h2>
+                    <div class="cart-summary-details">
 
-                <div class="cart-summary-details">
+                        <p class="cart-total">Sous-total <span>{{ totalPrice }} €</span></p>
 
-                    <p class="cart-total">Sous-total <span>{{ totalPrice }} €</span></p>
+                        <p class="shipping-info">Livraison standard <span>4,49 €</span></p>
 
-                    <p class="shipping-info">Livraison standard <span>4,49 €</span></p>
+                        <p class="cart-final-total">Total <span>{{ totalPrice + 4.49 }} €</span></p>
 
-                    <p class="cart-final-total">Total <span>{{ totalPrice + 4.49 }} €</span></p>
-
+                    </div>
                 </div>
+                <div class="summary-right">
+                    <div class="payment-options">
 
 
-                <div class="payment-options">
-
-                    <a href="{{ path('app_order') }}" class="btn btn-primary">Commander</a>
+                        <a href="{{ path('app_order') }}" class="btn btn-primary">Commander</a>
 
 
-                    <p class="payment-options-p">Avec notre partenaire Stripe, nous acceptons :</p>
+                        <a href="{{ path('app_product') }}" class="btn btn-secondary">Continuer mes achats</a>
 
 
 
+                    </div>
                 </div>
-
             </div>
 
         </div>
