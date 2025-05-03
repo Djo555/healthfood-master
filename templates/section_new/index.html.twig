@@ -1,11 +1,10 @@
 <div class = "selection">
-        <p class = "selection-texte"> Notre Selection </p>
-        <h1 class = "selection-title">  Nos Produits </h1>
+        <h1 class = "selection-title">  Notre selection de produits </h1>
     <div class = "selection-gallery"> 
 
     {% for product in products %}
 
- <div class="card mb-3">
+ <div class="card ">
     <div class="card-head">
         <div class = "badger" >  
             <p class = " badge-text" > Nouveauté </p> 
@@ -27,7 +26,7 @@
 
     </div>
     <a href="{{ path('app_product_by_id', {id: product.id}) }}" class="btn-panier">
-        Voir nos produits
+        Voir
     </a>
 </div>
 
